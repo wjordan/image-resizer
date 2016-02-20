@@ -42,7 +42,7 @@ Logger.prototype.error = function(){
 
 Logger.prototype.time = function(key){
   if (this.queueLog){
-    this.times[key] = Date.now();
+    this.times[key] = process.hrtime();
   } else {
     key = '[' + chalk.green(prefix) + '] ' + chalk.cyan(key);
     console.time.call(console, key);
@@ -51,7 +51,7 @@ Logger.prototype.time = function(key){
 
 Logger.prototype.timeEnd = function(key){
   if (this.queueLog){
-    var time = Date.now() - this.times[key];
+    var time = process.hrtime(this.times[key]);
     this.queue.push({ method: 'time', key: key, time: time });
   } else {
     key = '[' + chalk.green(prefix) + '] ' + chalk.cyan(key);

@@ -1,6 +1,6 @@
 {
   "name": "image-resizer-wjordan",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "(experimental fork) On-the-fly image resizing and optimization using node and sharp (libvips).",
   "main": "index.js",
   "scripts": {
@@ -33,36 +33,38 @@
     "iojs": "~2"
   },
   "dependencies": {
-    "aws-sdk": "~2.0.0-rc9",
-    "chalk": "~1.0.0",
+    "aws-sdk": "^2.2.37",
+    "chalk": "^1.1.1",
     "commander": "^2.2.0",
-    "concat-stream": "~1.4.5",
+    "concat-stream": "^1.5.1",
     "errorhandler": "^1.0.1",
     "express": "^4.9.7",
-    "glob": "~3.2.9",
+    "gcloud": "^0.28.0",
+    "glob": "^7.0.0",
     "image-type": "^2.0.2",
-    "lodash": "~2.4.1",
+    "lodash": "^4.5.0",
     "map-stream": "~0.1.0",
     "mkdirp": "^0.5.0",
     "morgan": "^1.0.1",
-    "request": "~2.34.0",
-    "sharp": "^0.12.0",
-    "twit": "~1.1.15"
+    "request": "^2.69.0",
+    "sharp": "^0.13.0",
+    "twit": "^2.2.2"
   },
   "devDependencies": {
-    "chai": "~1.9.0",
-    "connect-livereload": "~0.3.2",
-    "dotenv": "~0.2.8",
-    "ejs": "~1.0.0",
+    "chai": "^3.5.0",
+    "connect-livereload": "^0.5.4",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.4.1",
     "gulp": "^3.8.10",
-    "gulp-bump": "^0.1.8",
-    "gulp-jshint": "~1.4.2",
-    "gulp-mocha": "~0.4.1",
-    "gulp-nodemon": "~1.0.0",
-    "gulp-util": "~2.2.14",
-    "jshint-stylish": "~0.1.5",
-    "sandboxed-module": "^1.0.0",
-    "sinon": "~1.8.2",
-    "sinon-chai": "~2.5.0"
+    "gulp-bump": "^1.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "sandboxed-module": "^2.0.3",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
   }
 }
