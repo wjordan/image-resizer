@@ -62,8 +62,8 @@ gcsStream.prototype._read = function(){
 
     // if not store the image buffer
     else {
-      _this.image.contents = data.Body;
-      _this.image.originalContentLength = data.Body.length;
+      _this.image.contents = data;
+      _this.image.originalContentLength = data.length;
     }
 
     _this.ended = true;
