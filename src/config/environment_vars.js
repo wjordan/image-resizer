@@ -20,6 +20,12 @@ vars = {
   AWS_REGION: null,
   S3_BUCKET: null,
 
+  // GCS keys
+  GCS_PROJECT_ID: null,
+  GCS_CLIENT_EMAIL: null,
+  GCS_PRIVATE_KEY: null,
+  GCS_BUCKET: null,
+
   // Resize options
   RESIZE_PROCESS_ORIGINAL: true,
   AUTO_ORIENT: true,

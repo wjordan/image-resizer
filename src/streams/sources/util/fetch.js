@@ -21,7 +21,7 @@ function fetch(_this, url){
     else {
       if (response.statusCode === 200) {
         var contentType = _.last(response.headers['content-type'].split('/'));
-        if (!_.contains(Img.validFormats, contentType)) {
+        if (!_.includes(Img.validFormats, contentType)) {
           image.error = new Error('Invalid content type: ' + contentType);
         } else {
           // Set output format to input content-type if no explicit format is provided

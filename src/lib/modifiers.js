@@ -133,7 +133,7 @@ modKeys = _.map(modifierMap, function(value){
 
 
 function inArray(key, array){
-  return _.contains(array, key);
+  return _.includes(array, key);
 }
 
 function getModifier(key){

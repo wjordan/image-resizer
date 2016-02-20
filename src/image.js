@@ -25,12 +25,12 @@ ErrorStream.prototype._read = function(){
 };
 
 
-function Image(request){
+function Image(request, options){
   // placeholder for any error objects
   this.error = null;
 
   // set a mark for the start of the process
-  this.mark = Date.now();
+  this.mark = process.hrtime();
 
   // determine the name and format (mime) of the requested image
   this.parseImage(request);
@@ -49,6 +49,9 @@ function Image(request){
 
   // set the default expiry length, can be altered by a source file
   this.expiry = env.IMAGE_EXPIRY;
+
+  // fetch options for specific sources
+  this.options = options || {};
 
   // all logging strings will be queued here to be written on response
   this.log = new Logger();
