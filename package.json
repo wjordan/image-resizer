@@ -1,6 +1,6 @@
 {
   "name": "image-resizer-wjordan",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "(experimental fork) On-the-fly image resizing and optimization using node and sharp (libvips).",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,7 @@
   "contributors": [
     "James Nicol <james.andrew.nicol@gmail.com> (https://github.com/jimmynicol)"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "http://github.com/wjordan/image-resizer/raw/master/LICENSE"
-  },
+  "license": "MIT",
   "repository": "git://github.com/wjordan/image-resizer",
   "bin": {
     "image-resizer": "./bin/image_resizer.js"
@@ -33,36 +30,37 @@
     "iojs": "~2"
   },
   "dependencies": {
-    "aws-sdk": "~2.0.0-rc9",
-    "chalk": "~1.0.0",
+    "aws-sdk": "~2.82.0",
+    "chalk": "~2.0.1",
     "commander": "^2.2.0",
-    "concat-stream": "~1.4.5",
+    "concat-stream": "~1.6.0",
     "errorhandler": "^1.0.1",
     "express": "^4.9.7",
-    "glob": "~3.2.9",
-    "image-type": "^2.0.2",
-    "lodash": "~2.4.1",
+    "glob": "~7.1.2",
+    "image-type": "^3.0.0",
+    "lodash": "~4.17.4",
     "map-stream": "~0.1.0",
     "mkdirp": "^0.5.0",
     "morgan": "^1.0.1",
-    "request": "~2.34.0",
-    "sharp": "^0.12.0",
-    "twit": "~1.1.15"
+    "request": "~2.81.0",
+    "sharp": "*",
+    "twit": "~2.2.9"
   },
   "devDependencies": {
-    "chai": "~1.9.0",
-    "connect-livereload": "~0.3.2",
-    "dotenv": "~0.2.8",
-    "ejs": "~1.0.0",
+    "chai": "~4.0.2",
+    "connect-livereload": "~0.6.0",
+    "dotenv": "~4.0.0",
+    "ejs": "~2.5.6",
     "gulp": "^3.8.10",
-    "gulp-bump": "^0.1.8",
-    "gulp-jshint": "~1.4.2",
-    "gulp-mocha": "~0.4.1",
-    "gulp-nodemon": "~1.0.0",
-    "gulp-util": "~2.2.14",
-    "jshint-stylish": "~0.1.5",
-    "sandboxed-module": "^1.0.0",
-    "sinon": "~1.8.2",
-    "sinon-chai": "~2.5.0"
+    "gulp-bump": "^2.7.0",
+    "gulp-jshint": "~2.0.4",
+    "gulp-mocha": "~4.3.1",
+    "gulp-nodemon": "~2.2.1",
+    "gulp-util": "~3.0.8",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "~2.2.1",
+    "sandboxed-module": "^2.0.3",
+    "sinon": "~2.3.6",
+    "sinon-chai": "~2.11.0"
   }
 }
