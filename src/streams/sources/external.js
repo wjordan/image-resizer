@@ -43,6 +43,13 @@ External.prototype._read = function(){
     return this.push(null);
   }
 
+  // Encode image path parts - encode special characters ex. UTF8 chars, space, ...
+  // decodeURI is in Image.prototype.parseUrl
+  this.image.path = this.image.path
+    .split('/')
+    .map(function(part) { return encodeURI(part); })
+    .join('/');    
+
   url = this.prefix + '/' + this.image.path;
 
   this.image.log.time(this.key);
